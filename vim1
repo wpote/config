@@ -1,0 +1,27 @@
+
+" Python standard formatting:
+set autoindent
+set number
+set expandtab
+set textwidth=79
+set tabstop=4
+set softtabstop=4
+set ruler
+set shiftwidth=4
+
+:syntax on
+" Guarantees that the NERDTrees for all tabs will be one and the same
+map <F2> :NERDTreeToggle \| :silent NERDTreeMirror<CR>
+map <F4> :let @/ = ""<CR>
+" CTRL X + CTRL O for python method suggestion
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+" F3 to toggle line numbers for copying
+nnoremap <F3> :set nonumber!<CR>:set foldcolumn=0<CR>
+" Execute python file being edited with <Shift> + e:
+map <buffer> <S-e> :w<CR>:!/usr/bin/env python % <CR>
+" Show matching brackets
+set showmatch
+" To autoformat a document
+" :set filetype=xxxx (e.g. html, js)
+" :filetype indent on
+" : gg=G
