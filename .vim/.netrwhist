@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/Pote/Documents/Computing/Python'
+let g:netrw_dirhist_2='/Users/Pote/.matplotlib'
+let g:netrw_dirhist_3='/Users/Pote/Documents/Computing/Python/videosegmentation/demos'
+let g:netrw_dirhist_4='/Users/Pote/Documents/Computing/intelligentdata/intelligentdata/.git'
